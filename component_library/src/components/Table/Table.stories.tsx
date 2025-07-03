@@ -14,7 +14,7 @@ export const Default: Story = {
     children: (
       <tbody>
         <tr>
-          <td>Example cell</td>
+          <td> Table </td>
         </tr>
       </tbody>
     ),
@@ -28,7 +28,7 @@ export const Disabled: Story = {
     children: (
       <tbody>
         <tr>
-          <td>Example cell - disabled </td>
+          <td> Disabled Table </td>
         </tr>
       </tbody>
     ),

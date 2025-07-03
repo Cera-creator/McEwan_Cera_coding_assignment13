@@ -26,20 +26,10 @@ export const Default: Story = {
   },
 };
 
-export const WithOverlay: Story = {
-  args: {
-    src: 'https://via.placeholder.com/1200x300',
-    alt: 'Hero Image with overlay',
-    height: '300px',
-    overlayColor: '#00000099',
-    disabled: false,
-  },
-};
-
 export const Disabled: Story = {
   args: {
     src: 'https://via.placeholder.com/1200x300',
-    alt: 'Disabled hero image',
+    alt: 'Disabled Hero Image',
     height: '300px',
     overlayColor: '',
     disabled: true,

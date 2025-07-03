@@ -21,7 +21,7 @@ type Story = StoryObj<typeof Img>;
 export const Default: Story = {
   args: {
     src: 'https://via.placeholder.com/150',
-    alt: 'Placeholder image',
+    alt: 'Img',
     width: '150px',
     height: '150px',
     disabled: false,
@@ -32,7 +32,7 @@ export const Default: Story = {
 export const Disabled: Story = {
   args: {
     src: 'https://via.placeholder.com/150',
-    alt: 'Disabled image',
+    alt: 'Disabled Img',
     width: '150px',
     height: '150px',
     disabled: true,

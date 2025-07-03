@@ -21,9 +21,9 @@ export const Default: Story = {
     disabled: false,
     children: (
       <TableRow>
-        <TableCell content="Footer Cell 1" />
-        <TableCell content="Footer Cell 2" />
-        <TableCell content="Footer Cell 3" />
+        <TableCell content="Table Footer 1" />
+        <TableCell content="Table Footer 2" />
+        <TableCell content="Table Footer 3" />
       </TableRow>
     ),
   },
@@ -35,9 +35,9 @@ export const Disabled: Story = {
     disabled: true,
     children: (
       <TableRow>
-        <TableCell content="Footer Cell 1 (Disabled)" />
-        <TableCell content="Footer Cell 2 (Disabled)" />
-        <TableCell content="Footer Cell 3 (Disabled)" />
+        <TableCell content="Disabled Footer" />
+        <TableCell content="Disabled Footer" />
+        <TableCell content="Disabled Footer" />
       </TableRow>
     ),
   },

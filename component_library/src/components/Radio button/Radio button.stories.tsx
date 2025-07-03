@@ -19,9 +19,9 @@ type Story = StoryObj<typeof RadioButton>;
 
 export const Default: Story = {
   args: {
-    label: 'Option A',
+    label: 'Option 1',
     name: 'example',
-    value: 'A',
+    value: '1',
     checked: false,
     disabled: false,
   },

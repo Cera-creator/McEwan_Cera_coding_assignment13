@@ -16,7 +16,7 @@ type Story = StoryObj<typeof Text>;
 
 export const Default: Story = {
   args: {
-    content: 'This is a text component.',
+    content: 'Text content',
     backgroundColor: 'transparent',
     disabled: false,
   },
@@ -24,7 +24,7 @@ export const Default: Story = {
 
 export const Disabled: Story = {
   args: {
-    content: 'Disabled text',
+    content: 'Disabled Text',
     backgroundColor: '#f0f0f0',
     disabled: true,
   },

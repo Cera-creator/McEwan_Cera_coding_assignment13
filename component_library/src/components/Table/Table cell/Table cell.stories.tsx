@@ -16,7 +16,7 @@ type Story = StoryObj<typeof TableCell>;
 
 export const Default: Story = {
   args: {
-    content: 'Cell Content',
+    content: 'Table Cell',
     backgroundColor: '#fff',
     disabled: false,
   },

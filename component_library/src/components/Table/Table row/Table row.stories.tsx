@@ -20,9 +20,9 @@ export const Default: Story = {
     disabled: false,
     children: (
       <>
-        <TableCell content="Row cell 1" />
-        <TableCell content="Row cell 2" />
-        <TableCell content="Row cell 3" />
+        <TableCell content="Table Row 1" />
+        <TableCell content="Table Row 2" />
+        <TableCell content="Table Row 3" />
       </>
     ),
   },
@@ -34,8 +34,9 @@ export const Disabled: Story = {
     disabled: true,
     children: (
       <>
-        <TableCell content="Row Cell 1 (Disabled)" />
-        <TableCell content="Row Cell 2 (Disabled)" />
+        <TableCell content="Disabled Table Row" />
+        <TableCell content="Disabled Table Row" />
+        <TableCell content="Disabled Table Row" />
       </>
     ),
   },

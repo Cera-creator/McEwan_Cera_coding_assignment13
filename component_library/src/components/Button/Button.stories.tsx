@@ -17,7 +17,7 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
-    label: 'Click me',
+    label: 'Button',
     backgroundColor: '#007BFF',
     disabled: false,
   },
@@ -25,7 +25,7 @@ export const Primary: Story = {
 
 export const Disabled: Story = {
   args: {
-    label: 'Disabled',
+    label: 'Disabled Button',
     backgroundColor: '#007BFF',
     disabled: true,
   },

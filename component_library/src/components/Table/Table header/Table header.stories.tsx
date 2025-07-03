@@ -16,7 +16,7 @@ type Story = StoryObj<typeof TableHeader>;
 
 export const Default: Story = {
   args: {
-    title: 'Header Title',
+    title: 'Table Header',
     backgroundColor: '#333',
     disabled: false,
   },
