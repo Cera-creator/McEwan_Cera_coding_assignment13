@@ -10,7 +10,7 @@ const StyledTable = styled.table<{ disabled?: boolean; backgroundColor?: string 
 
 export const Table = ({ children, disabled, backgroundColor }: TableProps) => {
   return (
-    <StyledTable disabled={disabled} backgroundColor={backgroundColor}>
+    <StyledTable data-testid="table" disabled={disabled} backgroundColor={backgroundColor}>
       {children}
     </StyledTable>
   );

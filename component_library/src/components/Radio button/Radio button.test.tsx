@@ -10,12 +10,14 @@ describe('RadioButton component', () => {
     expect(getByLabelText('Option 1')).toBeVisible();
   });
 
-  it('has grey background and disabled cursor when disabled', () => {
+  it('has disabled cursor and opacity when disabled', () => {
     const { getByLabelText } = render(
       <RadioButton label="Option 1" name="group" value="1" disabled />
     );
     const radio = getByLabelText('Option 1');
-    expect(radio).toHaveStyle('background-color: #ccc');
-    expect(radio).toHaveStyle('cursor: not-allowed');
+    const wrapper = radio.closest('label');
+
+    expect(wrapper).toHaveStyle('cursor: not-allowed');
+    expect(wrapper).toHaveStyle('opacity: 0.6');
   });
 });
