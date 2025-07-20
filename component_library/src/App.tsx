@@ -2,9 +2,10 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 
-// Test comment for pre-commit hook testing
+// test comment for pre-commit hook testing
 function App() {
   const [count, setCount] = useState(0);
+  const unusedVariable = "this will cause an ESLint error";
 
   return (
     <>
