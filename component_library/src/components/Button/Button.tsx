@@ -41,3 +41,4 @@ export const Button: React.FC<ButtonProps> = ({
 };
 
 // changed styled button from const StyledButton = styled.button<{ backgroundColor?: string; disabled?: boolean }>` to current to remove redundant error message
+// adding line for testing pre-commit hook
