@@ -3,18 +3,21 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm install
-
 COPY . .
 
-RUN npm run build-storybook
+RUN npm install
 
-# Step 2: Serve Storybook static files with Nginx
+RUN npm run build
+
+# Stage 2: Serve with nginx
 FROM nginx:alpine
 
-COPY --from=builder /app/storybook-static /usr/share/nginx/html
+WORKDIR /mcewan_cera_ui_garden_build_checks
 
-EXPOSE 80
+COPY --from=builder /app/dist ./
+
+COPY nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 8018
 
 CMD ["nginx", "-g", "daemon off;"]
