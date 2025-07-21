@@ -20,6 +20,8 @@ jobs:
           node-version: 20
       - name: Install dependencies
         run: npm install
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
       - name: Build project
         run: npm run build
       - name: Check formatting
@@ -27,4 +29,4 @@ jobs:
       - name: Run linting
         run: npx eslint src/ .storybook/
       - name: Run tests
-        run: npm test
+        run: npm test -- --run
