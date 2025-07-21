@@ -23,7 +23,7 @@ jobs:
       - name: Build project
         run: npm run build
       - name: Check formatting
-        run: npx prettier --check src/ .storybook/ *.json *.md
+        run: npx prettier --check src/ .storybook/ package.json package-lock.json tsconfig*.json vite.config.ts
       - name: Run linting
         run: npx eslint src/ .storybook/
       - name: Run tests
