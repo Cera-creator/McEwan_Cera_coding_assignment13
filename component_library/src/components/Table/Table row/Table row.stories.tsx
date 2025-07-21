@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { TableRow } from './Table row';
-import { TableCell } from '../Table cell/Table cell'; // Adjust path as needed
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { TableRow } from "./Table row";
+import { TableCell } from "../Table cell/Table cell"; // Adjust path as needed
 
 const meta: Meta<typeof TableRow> = {
-  title: 'Components/TableRow',
+  title: "Components/TableRow",
   component: TableRow,
   argTypes: {
-    backgroundColor: { control: 'color' },
-    disabled: { control: 'boolean' },
+    backgroundColor: { control: "color" },
+    disabled: { control: "boolean" },
   },
 };
 
@@ -16,7 +16,7 @@ type Story = StoryObj<typeof TableRow>;
 
 export const Default: Story = {
   args: {
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     disabled: false,
     children: (
       <>
@@ -30,7 +30,7 @@ export const Default: Story = {
 
 export const Disabled: Story = {
   args: {
-    backgroundColor: '#f0f0f0',
+    backgroundColor: "#f0f0f0",
     disabled: true,
     children: (
       <>

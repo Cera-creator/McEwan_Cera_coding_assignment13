@@ -1,0 +1,11 @@
+FROM nginx:alpine
+
+WORKDIR /mcewan_cera_ui_garden_build_checks
+
+COPY test.html ./index.html
+
+COPY nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 8018
+
+CMD ["nginx", "-g", "daemon off;"] 

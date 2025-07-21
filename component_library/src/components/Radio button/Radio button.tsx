@@ -1,16 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import type { RadioButtonProps } from './Radio button.types';
+import React from "react";
+import styled from "styled-components";
+import type { RadioButtonProps } from "./Radio button.types";
 
 const Wrapper = styled.label<{ disabled?: boolean }>`
   display: flex;
   align-items: center;
   gap: 8px;
-  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+  cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
   opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};
 `;
 
-const StyledRadio = styled.input.attrs({ type: 'radio' })`
+const StyledRadio = styled.input.attrs({ type: "radio" })`
   width: 16px;
   height: 16px;
   cursor: pointer;

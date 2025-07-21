@@ -1,1 +1,1 @@
-export { TableRow } from './Table row';
+export { TableRow } from "./Table row";

@@ -14,11 +14,11 @@
     "build-storybook": "storybook build"
   },
   "lint-staged": {
-  "*.{js,jsx,ts,tsx}": [
-    "prettier --check",
-    "eslint",
-    "npm test -- --bail --findRelatedTests"
-  ]
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --check",
+      "eslint",
+      "npm test -- --bail --findRelatedTests"
+    ]
   },
   "dependencies": {
     "react": "^19.1.0",

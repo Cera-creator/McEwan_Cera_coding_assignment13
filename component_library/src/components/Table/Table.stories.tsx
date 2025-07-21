@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Table } from './Table';
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { Table } from "./Table";
 
 const meta: Meta<typeof Table> = {
-  title: 'Components/Table',
+  title: "Components/Table",
   component: Table,
 };
 
@@ -23,7 +23,7 @@ export const Default: Story = {
 
 export const Disabled: Story = {
   args: {
-    backgroundColor: '#f5f5f5',
+    backgroundColor: "#f5f5f5",
     disabled: true,
     children: (
       <tbody>

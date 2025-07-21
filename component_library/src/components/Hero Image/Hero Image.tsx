@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import type { HeroImageProps } from './Hero Image.types';
+import React from "react";
+import styled from "styled-components";
+import type { HeroImageProps } from "./Hero Image.types";
 
 const Wrapper = styled.div<{ height?: string; disabled?: boolean }>`
   position: relative;
   width: 100%;
-  height: ${({ height }) => height || '300px'};
+  height: ${({ height }) => height || "300px"};
   opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};
-  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'default')};
+  cursor: ${({ disabled }) => (disabled ? "not-allowed" : "default")};
   overflow: hidden;
 `;
 
@@ -24,7 +24,7 @@ const Overlay = styled.div<{ overlayColor?: string }>`
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: ${({ overlayColor }) => overlayColor || 'transparent'};
+  background-color: ${({ overlayColor }) => overlayColor || "transparent"};
   opacity: 0.4;
 `;
 

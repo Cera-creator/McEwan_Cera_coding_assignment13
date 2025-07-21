@@ -1,11 +1,11 @@
-import { render } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import { TableFooter } from './Table footer';
-import { TableRow } from '../Table row/Table row';
-import { TableCell } from '../Table cell/Table cell';
+import { render } from "@testing-library/react";
+import "@testing-library/jest-dom";
+import { TableFooter } from "./Table footer";
+import { TableRow } from "../Table row/Table row";
+import { TableCell } from "../Table cell/Table cell";
 
-describe('TableFooter component', () => {
-  it('is visible when rendered', () => {
+describe("TableFooter component", () => {
+  it("is visible when rendered", () => {
     const { getByText } = render(
       <table>
         <TableFooter>
@@ -13,12 +13,12 @@ describe('TableFooter component', () => {
             <TableCell content="Footer Cell" />
           </TableRow>
         </TableFooter>
-      </table>
+      </table>,
     );
-    expect(getByText('Footer Cell')).toBeVisible();
+    expect(getByText("Footer Cell")).toBeVisible();
   });
 
-  it('has grey background and disabled cursor when disabled', () => {
+  it("has grey background and disabled cursor when disabled", () => {
     const { container } = render(
       <table>
         <TableFooter disabled>
@@ -26,10 +26,10 @@ describe('TableFooter component', () => {
             <TableCell content="Disabled Footer Cell" />
           </TableRow>
         </TableFooter>
-      </table>
+      </table>,
     );
-    const tfoot = container.querySelector('tfoot');
-    expect(tfoot).toHaveStyle('background-color: #ccc');
-    expect(tfoot).toHaveStyle('cursor: not-allowed');
+    const tfoot = container.querySelector("tfoot");
+    expect(tfoot).toHaveStyle("background-color: #ccc");
+    expect(tfoot).toHaveStyle("cursor: not-allowed");
   });
 });

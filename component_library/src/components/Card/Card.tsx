@@ -1,16 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
-import type { CardProps } from './Card.types';
+import React from "react";
+import styled from "styled-components";
+import type { CardProps } from "./Card.types";
 
 const Wrapper = styled.div<{ disabled?: boolean; backgroundColor?: string }>`
   background-color: ${({ backgroundColor, disabled }) =>
-    disabled ? '#ccc' : backgroundColor || '#fff'};
+    disabled ? "#ccc" : backgroundColor || "#fff"};
   border-radius: 8px;
   padding: 16px;
   box-shadow: ${({ disabled }) =>
-    disabled ? 'none' : '0 2px 8px rgba(0,0,0,0.1)'};
+    disabled ? "none" : "0 2px 8px rgba(0,0,0,0.1)"};
   opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};
-  cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'default')};
+  cursor: ${({ disabled, onClick }) =>
+    disabled ? "not-allowed" : onClick ? "pointer" : "default"};
   user-select: none;
   max-width: 400px;
 `;

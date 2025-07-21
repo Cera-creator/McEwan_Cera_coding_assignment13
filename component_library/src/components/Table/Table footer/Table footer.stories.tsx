@@ -1,14 +1,14 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { TableFooter } from './Table footer';
-import { TableRow } from '../Table row/Table row';
-import { TableCell } from '../Table cell/Table cell';
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { TableFooter } from "./Table footer";
+import { TableRow } from "../Table row/Table row";
+import { TableCell } from "../Table cell/Table cell";
 
 const meta: Meta<typeof TableFooter> = {
-  title: 'Components/TableFooter',
+  title: "Components/TableFooter",
   component: TableFooter,
   argTypes: {
-    backgroundColor: { control: 'color' },
-    disabled: { control: 'boolean' },
+    backgroundColor: { control: "color" },
+    disabled: { control: "boolean" },
   },
 };
 
@@ -17,7 +17,7 @@ type Story = StoryObj<typeof TableFooter>;
 
 export const Default: Story = {
   args: {
-    backgroundColor: '#f5f5f5',
+    backgroundColor: "#f5f5f5",
     disabled: false,
     children: (
       <TableRow>
@@ -31,7 +31,7 @@ export const Default: Story = {
 
 export const Disabled: Story = {
   args: {
-    backgroundColor: '#f5f5f5',
+    backgroundColor: "#f5f5f5",
     disabled: true,
     children: (
       <TableRow>

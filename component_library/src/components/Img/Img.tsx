@@ -1,14 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
-import type { ImgProps } from './Img.types';
+import React from "react";
+import styled from "styled-components";
+import type { ImgProps } from "./Img.types";
 
 const StyledImg = styled.img<{ disabled?: boolean; backgroundColor?: string }>`
   max-width: 100%;
   height: auto;
   background-color: ${({ backgroundColor, disabled }) =>
-    disabled ? '#ccc' : backgroundColor || 'transparent'};
+    disabled ? "#ccc" : backgroundColor || "transparent"};
   opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};
-  cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'default')};
+  cursor: ${({ disabled, onClick }) =>
+    disabled ? "not-allowed" : onClick ? "pointer" : "default"};
   display: block;
 `;
 
