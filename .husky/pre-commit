@@ -1,1 +1,5 @@
-npm test
+#!/bin/sh
+if [ "$(basename $PWD)" != "component_library" ]; then
+  cd component_library
+fi
+npx lint-staged
