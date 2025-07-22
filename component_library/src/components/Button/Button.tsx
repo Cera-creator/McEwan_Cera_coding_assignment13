@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import type { ButtonProps } from "./Button.types";
 
+const badlyFormatted = [1, 2, 3];
+const unusedVar = 42;
 const StyledButton = styled.button.withConfig({
   shouldForwardProp: (prop) => prop !== "backgroundColor",
 })<{
@@ -42,7 +44,5 @@ export const Button: React.FC<ButtonProps> = ({
   );
 };
 
-const    badlyFormatted   =   [  1,2,3  ]
-const unusedVar = 42;
 // changed styled button from const StyledButton = styled.button<{ backgroundColor?: string; disabled?: boolean }>` to current to remove redundant error message
 // adding line for testing pre-commit hook
