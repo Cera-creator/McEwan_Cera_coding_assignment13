@@ -9,7 +9,6 @@ const StyledButton = styled.button.withConfig({
 }>`
   padding: 10px 20px;
   font-size: 16px;
-
   border: none;
   border-radius: 4px;
   color: white;
