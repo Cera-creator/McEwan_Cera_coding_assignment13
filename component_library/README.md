@@ -37,7 +37,7 @@ docker run -d -p 8018:8018 --name mcewan_cera_coding_assignment13 mcewan_cera_co
 
 ### 4. Access the application
 
-Open your web browser and navigate to:  
+Open your web browser and navigate to:
 **http://localhost:8018**
 
 ---
