@@ -7,7 +7,6 @@ const StyledButton = styled.button.withConfig({
   backgroundColor?: string;
   disabled?: boolean;
 }>`
-
   padding: 10px 20px;
   font-size: 16px;
 
@@ -25,8 +24,7 @@ const StyledButton = styled.button.withConfig({
     font-size: 14px;
   }
 `;
-const badlyFormatted = [1, 2, 3];
-const unusedVar = 42;
+
 export const Button: React.FC<ButtonProps> = ({
   label,
   onClick,
@@ -43,6 +41,3 @@ export const Button: React.FC<ButtonProps> = ({
     </StyledButton>
   );
 };
-
-// changed styled button from const StyledButton = styled.button<{ backgroundColor?: string; disabled?: boolean }>` to current to remove redundant error message
-// adding line for testing pre-commit hook
