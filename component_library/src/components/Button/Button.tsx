@@ -1,14 +1,13 @@
 import styled from "styled-components";
 import type { ButtonProps } from "./Button.types";
 
-const badlyFormatted = [1, 2, 3];
-const unusedVar = 42;
 const StyledButton = styled.button.withConfig({
   shouldForwardProp: (prop) => prop !== "backgroundColor",
 })<{
   backgroundColor?: string;
   disabled?: boolean;
 }>`
+
   padding: 10px 20px;
   font-size: 16px;
 
@@ -26,7 +25,8 @@ const StyledButton = styled.button.withConfig({
     font-size: 14px;
   }
 `;
-
+const badlyFormatted = [1, 2, 3];
+const unusedVar = 42;
 export const Button: React.FC<ButtonProps> = ({
   label,
   onClick,
