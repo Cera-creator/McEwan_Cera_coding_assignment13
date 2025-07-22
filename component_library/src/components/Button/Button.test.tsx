@@ -14,4 +14,9 @@ describe("Button component", () => {
     expect(button).toHaveStyle("background-color: #ccc");
     expect(button).toHaveStyle("cursor: not-allowed");
   });
+
+  test('Button renders', () => {
+    expect(true).toBe(false); // should fail!
+  });
+
 });
