@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import type { ButtonProps } from "./Button.types";
 
-  const bad = 'badconst'
-  
 const StyledButton = styled.button.withConfig({
   shouldForwardProp: (prop) => prop !== "backgroundColor",
 })<{
