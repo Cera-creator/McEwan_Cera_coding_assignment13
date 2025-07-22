@@ -42,5 +42,7 @@ export const Button: React.FC<ButtonProps> = ({
   );
 };
 
+const    badlyFormatted   =   [  1,2,3  ]
+const unusedVar = 42;
 // changed styled button from const StyledButton = styled.button<{ backgroundColor?: string; disabled?: boolean }>` to current to remove redundant error message
 // adding line for testing pre-commit hook
