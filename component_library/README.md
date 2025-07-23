@@ -7,7 +7,7 @@ This repository contains a React UI component library built with Vite and Storyb
 ## What you need installed before starting:
 
 - [Docker](https://www.docker.com/get-started) installed on your machine
-- Node.js and npm
+- Node.js
 - Git
 
 ---
@@ -20,12 +20,16 @@ Open a terminal in your preferred directory and run:
 
 ```
 git clone https://github.com/Cera-creator/McEwan_Cera_coding_assignment13.git
-cd McEwan_Cera_ui_garden/component_library
+cd McEwan_Cera_coding_assignment13
 ```
 
 ### 2. Install dependencies
 
+This must be done in both the root directory "McEwan_Cera_coding_assignment13" and "component_library".
+
 ```
+npm install
+cd component_library
 npm install
 ```
 
