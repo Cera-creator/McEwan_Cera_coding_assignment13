@@ -55,6 +55,7 @@ npm run build
 ---
 
 ## Running with Docker
+
 For running the app in a containerized environment:
 
 ### 1. Build the Docker image
