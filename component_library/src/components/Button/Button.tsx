@@ -11,7 +11,7 @@ const StyledButton = styled.button.withConfig({
   font-size: 16px;
   border: none;
   border-radius: 4px;
-  color: white;
+  color: black;
   background-color: ${({ backgroundColor, disabled }) =>
     disabled ? "#ccc" : backgroundColor || "#007BFF"};
   cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
